@@ -1,6 +1,8 @@
 package com.company;
 
-public class ConverterSwitch implements Converter{
+import com.company.interfaces.Converter;
+
+public class ConverterSwitch implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
         switch (monthNumber) {
@@ -24,19 +26,19 @@ public class ConverterSwitch implements Converter{
     public String convertDay(int dayNumber) {
         switch (dayNumber) {
             case 1:
-                return "January";
+                return "Sunday";
             case 2:
-                return "February";
+                return "Monday";
             case 3:
-                return "March";
+                return "Tuesday";
             case 4:
-                return "April";
+                return "Wednesday";
             case 5:
-                return "May";
+                return "Thursday";
             case 6:
-                return "June";
+                return "Friday";
             case 7:
-                return "July";
+                return "Saturday";
             default:
                 return "Integer must be between 1 - 7";
         }

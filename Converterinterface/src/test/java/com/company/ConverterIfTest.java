@@ -1,9 +1,8 @@
 package com.company;
 
+import com.company.interfaces.Converter;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
 
