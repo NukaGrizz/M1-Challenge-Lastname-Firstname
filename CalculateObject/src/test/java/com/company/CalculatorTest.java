@@ -28,8 +28,8 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnTheQuotientOfTwoInsOrDoubles(){
-        assertEquals(4, calculator.divide(12,3), .0001);
-        assertEquals(1.7142, calculator.divide(12,7), .0001);
+        assertEquals(4, calculator.divide(12,3));
+        assertEquals(12/7, calculator.divide(12,7));
         assertEquals(4.909, calculator.divide(10.8,2.2),.0001);
     }
 
