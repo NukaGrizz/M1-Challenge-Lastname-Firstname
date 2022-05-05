@@ -16,13 +16,13 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnTheDifferanceOfTwoIntsOrDoubles(){
-        assertEquals(-27, calculator.subtract(23,52));
+        assertEquals(-29, calculator.subtract(23,52));
         assertEquals(5, calculator.subtract(5.5,0.5),.0001);
     }
 
     @Test
     public void shouldReturnTheProductOfTwoIntsOrDoubles(){
-        assertEquals(68, calculator.multiply(32,2));
+        assertEquals(64, calculator.multiply(32,2));
         assertEquals(29.48, calculator.multiply(6.7,4.4),.0001);
     }
 
