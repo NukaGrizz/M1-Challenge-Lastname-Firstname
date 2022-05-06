@@ -89,12 +89,4 @@ public class CustomerTest {
         assertEquals("80808",testCustomer.getShippingAddress().getZipcode());
     }
 
-
-
-
-
-
-
-
-
 }
