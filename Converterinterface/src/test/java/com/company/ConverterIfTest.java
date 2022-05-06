@@ -30,7 +30,7 @@ public class ConverterIfTest {
         assertEquals("October", converterIf.convertMonth(10));
         assertEquals("November", converterIf.convertMonth(11));
         assertEquals("December", converterIf.convertMonth(12));
-        assertEquals("Integer must be between 1 - 12.", converterIf.convertMonth(20));
+        assertEquals("Integer must be between 1 - 12", converterIf.convertMonth(20));
     }
 
 

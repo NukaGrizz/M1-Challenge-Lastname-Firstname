@@ -33,6 +33,21 @@ public class IceCreamTest {
     }
 
     @Test
+    public void shouldSetFactoryIceCreamInfoNew(){
+        iceCreamFactory.setFlavor("Strawberry");
+        assertEquals("Strawberry",iceCreamFactory.getFlavor());
+        iceCreamFactory.setSalePrice(2.00);
+        assertEquals(2.00,iceCreamFactory.getSalePrice(), .01);
+        iceCreamFactory.setProductionCost(.50);
+        assertEquals(0.50,iceCreamFactory.getProductionCost(), .01);
+        iceCreamFactory.setProductionTime(0.02);
+        assertEquals(0.02, iceCreamFactory.getProductionTime(), .01);
+        List<String> ingredientsNew = new ArrayList<>(Arrays.asList("vanilla icecream", "Strawberries"));
+        iceCreamFactory.setIngredients(ingredientsNew);
+        assertEquals(ingredientsNew, iceCreamFactory.getIngredients());
+    }
+
+    @Test
     public void shouldCalculateProfitPerUnitOfFactoryIceCream() {
         assertEquals(1.25, iceCreamFactory.calculateProfitPerUnit(), .01);
     }
@@ -54,6 +69,19 @@ public class IceCreamTest {
         assertEquals(2.99,iceCreamPOS.getPrice(), .01);
         assertEquals(1,iceCreamPOS.getScoops(), .01);
         assertEquals(100, iceCreamPOS.getQuantityRemaining(), .01);
+
+    }
+
+    @Test
+    public void shouldSetPointOfSaleIceCreamInfoNew(){
+        iceCreamPOS.setFlavor("Strawberry");
+        assertEquals("Strawberry",iceCreamPOS.getFlavor());
+        iceCreamPOS.setPrice(3.50);
+        assertEquals(3.50,iceCreamPOS.getPrice(), .01);
+        iceCreamPOS.setScoops(2);
+        assertEquals(2,iceCreamPOS.getScoops(), .01);
+        iceCreamPOS.setQuantityRemaining(50);
+        assertEquals(50, iceCreamPOS.getQuantityRemaining());
 
     }
 
